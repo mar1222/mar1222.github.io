@@ -73,6 +73,11 @@ option:checked {
     padding: 5px 17px;
 }
 
+#custom-link-style {
+    text-decoration: none !important;
+    --bs-link-color-rgb: white;
+}
+
 .isesion:hover {
     background: rgb(193, 17, 25);
 }
