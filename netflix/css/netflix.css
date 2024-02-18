@@ -509,6 +509,7 @@ footer .flecha-abajo {
     }
     .smorada img {
         width: 30px;
+        height: 30px;
     }
 
     .smorada p:first-of-type {
@@ -542,29 +543,6 @@ footer .flecha-abajo {
         width: 63%;
         bottom: 250px;
         left: 65px;
-    }
-    
-}
-@media (min-width: 428px) and (max-width: 766px) {
-    .smorada img {
-        width: 30px;
-    }
-
-    .portadastranger{
-        /* max-width: 100%; */
-        width: 100%;
-        bottom: 5px;
-        font-size: 12px;
-        white-space: nowrap;
-    }
-    
-    .portadastranger img{
-        width: 30%;
-    }
-
-    .btn-descarga img{
-        width: 100%;
-        margin-top: 15px;
     }
     
 }
