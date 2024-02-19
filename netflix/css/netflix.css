@@ -1,0 +1,701 @@
+body {
+    /* font-family: 'Bebas Neue', sans-serif; */
+    font-family: Netflix Sans, Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif; 
+    src: url(../NetflixSans_W_Blk.woff2);
+    src: url(../NetflixSans_W_Md.woff2);
+    margin: 0;
+    
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/grande.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+/* navbar */
+
+
+
+.logo {
+    width: 20%;   
+    
+}
+
+
+nav select {
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+option{
+    background-color: white;
+    color: black;
+}
+
+nav .flecha-abajo {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+}
+
+
+nav .idioma {
+    filter: invert();
+    top: 8px;
+    left: 12px;
+    
+    
+}
+
+
+option:checked {
+    font-weight: bold; /* Resalta la opción seleccionada */
+  }
+
+.isesion {
+    background: rgb(229, 9, 20);
+    color: #fff;
+    border: 0;
+    border-radius: 0.25rem;
+    padding: 5px 17px;
+}
+
+#custom-link-style {
+    text-decoration: none !important;
+    --bs-link-color-rgb: white;
+}
+
+.isesion:hover {
+    background: rgb(193, 17, 25);
+}
+
+/* seccion1*/
+
+.principal {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.detalle1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.detalle2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+form {
+    width: 60%;
+}
+
+form #floatingInput {
+    color: #fff;
+}
+
+form .form-control:focus {
+    border-color: #fff;
+    box-shadow: none;
+    border-width: medium;
+}
+
+form .form-floating>.form-control:focus~label {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+form .form-floating>.form-control:focus~label::after {
+    background-color: transparent;
+}
+
+form .form-floating {
+    width: 50%;
+}
+
+form #floatingInput {
+    background: transparent;
+}
+
+form label {
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 10px;
+}
+
+.get-started-btn {
+    height: 60px;
+    font-size: 1.5rem;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.get-started-btn::after {
+    content: "\276F";
+    margin-left: 5px;
+}
+
+/* section morada */
+
+.smorada {
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 1;
+}
+
+.smorada .container-md {
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    margin: 0 74px;
+    color: #fff;
+    padding: 22px;
+}
+
+.smorada img {
+    width: 25%;
+    height: fit-content;
+}
+
+.smorada p:first-of-type {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+
+.smorada p:last-of-type {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.smorada a {
+    color: #448ef4;
+    font-weight: 500;
+}
+
+.smorada a::after {
+    content: "\276F";
+    margin-left: 10px;
+}
+
+/* section disfruta*/
+
+.tvpng{
+    z-index: 0;
+}
+
+.tv video{
+    
+    width: 75%;
+    height: 100%;
+    bottom: 320px;
+    left: 70px;
+    position: relative;
+    z-index: -1;
+}
+
+.macpng{
+    z-index: 0;
+}
+
+.mac video{
+    width: 63%;
+    bottom: 355px;
+    left: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+
+/* prueba */
+.contenedor-texto{
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    margin-top: 30px;
+    
+}
+.p1 p{
+    font-weight: bolder;
+    color: #ffffff;
+    margin-bottom: 1px;
+}
+.p2 p{
+    color: #0071eb;
+    
+}
+.movil{
+    z-index: 0;
+    
+}
+.portadastranger{
+    border: 2px solid rgba(128,128,128,0.7);
+    border-radius: 0.75rem;
+    max-width: 70%;
+    margin: -100px auto 0px;
+    display: flex;
+    z-index: 1;
+    background-color: black;
+    position: relative;
+    bottom: 50px;
+    
+    
+    
+}
+
+.portadastranger img{
+    width: 17%;
+    height: auto;
+    padding: 5px;
+}
+
+
+
+.btn-descarga img{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.stitulo {
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.sparrafo {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.sdispositivo,
+.sdescarga {
+    border-top: 5px solid #232323;
+    border-bottom: 5px solid #232323;
+}
+
+/* section faq */
+
+.sfaq h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+}
+
+.sfaq button {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sfaq .accordion {
+    --bs-accordion-color: rgb(255, 255, 255);
+    --bs-accordion-bg: rgb(45, 45, 45);
+    --bs-accordion-border-color: none;
+    --bs-accordion-border-radius: none;
+}
+
+.sfaq .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.sfaq .accordion-button:focus {
+    border: none;
+    box-shadow: none;
+}
+
+.sfaq .accordion-button:hover {
+    background-color: rgb(65,65,65);
+}
+
+.sfaq .accordion-button:not(.collapsed) {
+    background-color: rgb(65,65,65);
+    color: rgb(255,255,255);
+}
+
+.sfaq .accordion-button::after {
+    content: "+";
+    background-image: none;
+    position: absolute;
+    height: 30px;
+    font-size: 50px;
+    top: 5px;
+    right: 45px;
+}
+
+.sfaq .accordion-button:not(.collapsed)::after {
+    background-image: none;
+    transform: none;
+    content: "\00d7";
+}
+
+/* footer */
+
+footer {
+    border-top: 5px solid #232323;
+}
+
+footer p,
+footer a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+footer select {
+    background: transparent;
+    color: #fff;
+    padding-left: 40px;
+    padding-right: 40px;
+    appearance: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+footer img {
+    filter: invert();
+    top: 8px;
+    left: 12px;
+}
+
+
+
+footer .flecha-abajo {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #fff;
+    top: 15px;
+    right: -115px;
+}
+
+
+
+
+
+/* Grande */
+@media(min-width: 992px){ 
+    nav img {
+        width: 17%;
+    }
+
+    .principal,
+    .stitulo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .detalle1,
+    .detalle2,
+    .sparrafo,
+    .sfaq h3 {
+        font-size: 1.125rem;
+    }
+
+    .smorada img {
+        width: 25%;
+    }
+
+
+    .disfruta .container {
+        padding-top: 1rem;
+    }
+    .tv video{
+    
+        width: 73%;
+        height: 100%;
+        bottom: 370px;
+        left: 80px;
+    }
+    
+    .mac video{
+        width: 63%;
+        bottom: 400px;
+        left: 110px;
+    }
+}
+
+/* Clase */
+
+@media (max-width: 1366px) {
+    .tv video{
+    
+        width: 73%;
+        height: 100%;
+        bottom: 318px;
+        left: 70px;
+    }
+    
+    .mac video{
+        width: 63%;
+        bottom: 360px;
+        left: 100px;
+    }
+
+    .portadastranger{
+        width: 100%;
+        bottom: 60px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    .portadastranger img{
+        width: 25%;
+    }
+
+    .btn-descarga img{
+        width: 80%;
+        margin-top: 15px;
+    }
+
+  }
+
+
+
+
+
+
+
+/* Mediana */
+@media (min-width: 768px) and (max-width: 991px) {
+    nav img {
+        width: 17%;
+    }
+
+    .principal,
+    .stitulo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .detalle1,
+    .detalle2,
+    .sparrafo,
+    .sfaq h3 {
+        font-size: 1.125rem;
+    }
+
+    .smorada img {
+        width: 50%;
+    }
+
+
+    .disfruta .container {
+        padding-top: 5rem;
+    }
+    .tv video{
+    
+        width: 73%;
+        height: 100%;
+        bottom: 380px;
+        left: 80px;
+    }
+    
+    .mac video{
+        width: 63%;
+        bottom: 400px;
+        left: 105px;
+    }
+
+}
+
+
+
+/* MOVILES */
+
+
+@media (max-width: 767px) {
+    nav img {
+        width: 17%;
+    }
+
+    .principal,
+    .stitulo {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .detalle1,
+    .detalle2,
+    .sparrafo,
+    .sfaq h3 {
+        font-size: 1rem;
+    }
+    .smorada img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .smorada p:first-of-type {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    
+    .smorada p:last-of-type {
+        font-size: 12px;
+
+    }
+    
+    .smorada a {
+        font-size: 12px;
+    }
+    
+    .portadastranger{
+        width: 100%;
+        bottom: 5px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    .portadastranger img{
+        width: 30%;
+    }
+
+    .btn-descarga img{
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .disfruta .container {
+        padding-top: 10rem;
+    }
+    .tv video{
+    
+        width: 73%;
+        height: 100%;
+        bottom: 230px;
+        left: 50px;
+    }
+    
+    .mac video{
+        width: 63%;
+        bottom: 250px;
+        left: 65px;
+    }
+    
+}
+
+/* MOVIL2 */
+@media screen and (min-width: 2400px) and (min-height: 1080px) {
+
+    nav img {
+        width: 17%;
+    }
+
+    .principal,
+    .stitulo {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .detalle1,
+    .detalle2,
+    .sparrafo,
+    .sfaq h3 {
+        font-size: 1.5rem;
+    }
+    .smorada img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .smorada p:first-of-type {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+    
+    .smorada p:last-of-type {
+        font-size: 17px;
+
+    }
+    
+    .smorada a {
+        font-size: 17px;
+    }
+
+    .disfruta .container {
+        padding-top: 3rem;
+    }
+    .tv video{
+    
+        width: 73%;
+        height: 100%;
+        bottom: 370px;
+        left: 80px;
+    }
+    
+    .mac video{
+        width: 63%;
+        bottom: 420px;
+        left: 110px;
+    }
+
+    .portadastranger{
+        width: 100%;
+        bottom: 50px;
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    
+    .portadastranger img{
+        width: 20%;
+    }
+
+    .btn-descarga img{
+        width: 100%;
+    }
+
+
+
+}
+
+
+
+/* @media (min-width: 428px) and (max-width: 766px) {
+    .smorada img {
+        width: 30px;
+    }
+
+    .portadastranger{
+        width: 100%;
+        bottom: 5px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    .portadastranger img{
+        width: 30%;
+    }
+
+    .btn-descarga img{
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+}  */
