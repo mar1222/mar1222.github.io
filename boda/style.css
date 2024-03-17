@@ -1,0 +1,53 @@
+/* Estilos CSS */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    color: #333;
+    z-index: 1000; /* Asegura que el encabezado esté sobre el contenido */
+}
+
+h5 {
+    font-size: 32px; /* Tamaño de fuente */
+    -webkit-text-stroke: 1.5px black; /* Borde negro alrededor de cada letra */
+    color: white; /* Color del texto */
+    
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slide {
+    margin: 10px;
+    text-align: center;
+}
+
+
+.slide img {
+    width: 300px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.encuesta {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
