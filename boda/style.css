@@ -15,7 +15,7 @@ header {
 }
 
 h5 {
-    font-size: 32px; /* Tamaño de fuente */
+    font-size: 2rem; /* Tamaño de fuente */
     -webkit-text-stroke: 1.5px black; /* Borde negro alrededor de cada letra */
     color: white; /* Color del texto */
     
@@ -51,3 +51,4 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
