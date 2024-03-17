@@ -28,7 +28,7 @@ h1{
 }
 
 h5 {
-    font-size: 2em; /* Tamaño de fuente */
+    font-size: 2.5em; /* Tamaño de fuente */
     -webkit-text-stroke: 1.5px black; /* Borde negro alrededor de cada letra */
     color: white; /* Color del texto */
     
@@ -50,6 +50,14 @@ h5 {
     width: 300px;
     height: 700px;
     object-fit: cover;
+}
+.container h2{
+    font-size: 1.1em;
+    margin-top: 50px;
+}
+
+.container{
+    margin-bottom: 2em;
 }
 
 h2{
@@ -88,12 +96,13 @@ footer {
     }
     h5 {
         font-weight: bolder;
-        font-size: 1.19em;
+        font-size: 1.5em;
         -webkit-text-stroke: 1px black;
     }
 
     h2{
         font-size: 1.2em;
+        font-weight: bolder;
     }
 
 }
