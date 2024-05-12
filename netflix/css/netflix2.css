@@ -1,0 +1,782 @@
+body {
+    background-color: #141414;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.netflix-padding-left {
+    padding-left: 57px;
+}
+
+
+.netflix-padding-right {
+    padding-right: 57px;
+}
+
+.netflix-navbar {
+    z-index: 1000;
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+}
+
+
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.netflix-filas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+
+.netflix-filas .izq {
+    width: max-content
+}
+
+.netflix-filas .drch {
+    width: max-content
+}
+
+i {
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 24px 8px 20px;
+    margin: 0px 10px 10px 0px;
+}
+
+.netflix-perfil {
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.netflix-nav {
+    display: block;
+    align-items: center;
+}
+
+.netflix-nav button {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.623);
+    border: none;
+    font-size: 13px;
+}
+
+.netflix-nav button:hover {
+    color: #fff;
+}
+
+
+.netflix-video {
+    width: max-content;
+    z-index: 10;
+    position: relative;
+}
+
+.netflix-video .arriba1 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.netflix-video .abajo {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+}
+
+.netflix-video video {
+    max-width: 100%;
+	height: 780px;
+}
+
+
+.netflix-video .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+}
+
+.netflix-video .content .izq {
+    margin-left: 80px;
+}
+
+.netflix-video .content .izq img {
+    margin-top: 190px;
+
+}
+
+.netflix-video .content .right {
+    width: 50%;
+}
+
+
+
+.card {
+    width: 280px;
+    background-color: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    margin: 3px;
+    position: relative;
+    font-size: 16px;
+}
+
+
+.card:hover {
+    transform: scaleX(1.3) scaleY(1.3);
+    margin: 0 0 0 2rem;
+    z-index: 10;
+}
+
+
+.card-body {
+    display: none;
+    padding: 10px 15px;
+    position: absolute;
+    background-color: #141414;
+    top: 120px;
+    width: 100%;
+}
+
+
+.card-icon {
+    color: #fff;
+    padding: 0px !important;
+    font-size: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.card:hover>.card-body {
+    display: block;
+
+}
+
+.carousel-control-prev {
+    display: none;
+}
+
+.carousel-control-next {
+    display: none;
+}
+
+.tab-change-btn {
+    border: none;
+    width: 30px !important;
+}
+
+
+.margin-right {
+    margin-right: 100px;
+}
+
+.netflix-text {
+    font-size: 12px;
+}
+
+.margin-title2 {
+    margin-top: 33px;
+}
+
+
+.footer {
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+ul {
+    list-style: none;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.367);
+    font-weight: 100;
+}
+
+
+.copy-right {
+    font-size: 13px;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.367);
+    margin-left: 28px;
+}
+
+.redes-sociales {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 1rem;
+    margin-left: 1.8rem;
+}
+
+.redes-sociales a {
+    margin: 10px 50px 10px 10px;
+    width: 1px;
+
+}
+
+.redes-sociales img {
+    width: 20px;
+    height: auto;
+}
+
+.service-code-button {
+    display: inline-block;
+    padding: 6.5px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.367);
+    color: rgba(255, 255, 255, 0.367);
+    text-decoration: none;
+    border-radius: 4px;
+    width: 125px;
+    margin: 1rem 0 1rem 2.5rem;
+    font-size: 13px;
+
+}
+
+.service-code-button:hover {
+    color: #fff;
+}
+
+
+/* MARCA DE AGUA */
+body:after {
+    content: "Manuel Andrade Ramírez";
+    font-size: 1em;
+    color: rgba(52, 166, 214, 0.4);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 90%;
+    right: 0;
+    bottom: 0;
+    left: 85%;
+}
+
+
+/* Grande */
+@media only screen and (max-width: 1920px) and (max-height: 1080px) {
+    .netflix-padding-left {
+        padding-left: 30px;
+    }
+
+
+    .netflix-padding-right {
+        padding-right: 50px;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    i {
+        font-size: 20px;
+        cursor: pointer;
+        padding: 5px !important;
+        margin-top: 10px;
+    }
+
+    .netflix-perfil {
+        margin-left: 5px;
+    }
+
+    /* video */
+    .netflix-video .content .izq {
+        margin-left: 25px;
+        margin-top: -200px;
+        
+    }
+
+    .netflix-video .content .izq img {
+        width: 500px;
+        margin-top: 400px !important;
+    }
+
+    button {
+        font-size: 14px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+    /*video*/
+
+    .slider-box{
+        margin-right: 10px;
+    }
+    .cajitas{
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 350px;
+    }
+
+    .margin-right {
+        margin-right: unset;
+    }
+
+    .card-icon {
+        font-size: 27px !important;
+    }
+
+    .card-body {
+        top: 80px !important;
+    }
+
+    .netflix-text {
+        font-size: 10px;
+    }
+    .copy-right {
+
+        margin-left: 25px !important;
+    }
+}
+
+
+/* Clase */
+
+/* @media only screen and (max-width: 1366px) and (max-height: 768px) {
+    .netflix-video .content .izq {
+        margin-left: 35px;
+    }
+
+    .netflix-video .content .izq img {
+        width: 300px;
+        margin-top: 200px !important;
+    }
+
+    button {
+        font-size: 12px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+    .vhead .netflix-video video {
+        height: 770px;
+    }
+
+    
+
+    .vhead {
+        position: relative;
+    }
+
+    .netflix-video .content .izq .btn {
+        white-space: nowrap;
+        padding: 5px;
+        padding-right: 20px;
+        bottom: 10px;
+        right: 5px;
+        position: relative;
+        margin: 0 5px !important;
+        font-size: 16px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+    .slider-box .slide {
+        margin-right: 5px;
+    }
+
+    .slider {
+        top: 780px;
+    }
+
+    .slide2 .slide {
+        top: 100px;
+    }
+
+    .slide3 .slide {
+        top: 110px;
+        margin-bottom: 200px;
+    }
+
+    .card-icon {
+        font-size: 20px !important;
+    }
+
+    .netflix-text {
+        font-size: 9px;
+    }
+
+
+} */
+
+
+
+
+
+/* Mediana */
+/* @media (min-width: 768px) and (max-width: 991px) {
+    .netflix-padding-left {
+        padding-left: 15px !important;
+    }
+
+    .netflix-padding-right {
+        padding-right: 15px !important;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    i {
+        font-size: 14px;
+        padding: 8px !important;
+    }
+
+    .netflix-perfil {
+        margin-left: 8px;
+    }
+
+    
+    .netflix-video .content .izq {
+        margin-left: 40px;
+    }
+
+    .netflix-video .content .izq img {
+        width: 220px;
+        margin-top: 120px !important;
+    }
+
+
+    .vhead {
+        position: relative;
+    }
+
+    .netflix-video .content .izq .btn {
+        white-space: nowrap;
+        padding: 5px;
+        padding-right: 20px;
+        bottom: 10px;
+        right: 5px;
+        position: relative;
+        margin: 0 5px !important;
+        font-size: 16px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+
+
+    
+    .slider {
+        top: 430px;
+
+    }
+
+    .card {
+        width: 180px;
+    }
+
+    .card:hover {
+        display: none;
+
+    }
+
+    .margin-right {
+        margin-right: 15px;
+    }
+
+    .card-icon {
+        font-size: 18px !important;
+    }
+
+    .card-body {
+        top: 100px !important;
+    }
+
+    .netflix-text {
+        font-size: 10px;
+    }
+
+    .position-slider2 {
+        top: 10px !important;
+    }
+
+    .margin-title {
+        margin-top: 130px;
+    }
+
+    .margin-title2 {
+        margin-top: 18px;
+    }
+
+    .copy-right {
+        margin-left: 24.5px !important;
+    }
+} */
+
+
+
+/* MOVILES 13 pro max */
+
+@media only screen and (max-width: 428px) and (max-height: 926px){
+    .netflix-padding-left {
+        padding-left: 1px !important;
+    }
+
+    .netflix-padding-right {
+        padding-right: 1px !important;
+    }
+
+    .navbar-brand img {
+        width: 60px;
+    }
+
+    .netflix-navbar {
+        padding-top: 1px !important;
+        padding-bottom: 1px !important;
+    }
+
+    i {
+        font-size: 14px;
+        padding: 3px !important;
+    }
+
+    .netflix-perfil {
+        margin-left: 1px;
+    }
+/* 
+    .netflix-nav {
+        display: block !important;
+    } */
+
+    .vhead .netflix-video video {
+        height: 300px;
+    }
+
+    .netflix-video .content .izq {
+        margin-left: 25px;
+        margin-top: -100px;
+        width: 1px !important;
+        
+    }
+
+    .netflix-video .content .izq img {
+        width: 100px;
+        margin-top: 110px !important;
+    }
+
+    button {
+        font-size: 9px !important;
+        width: auto !important;
+        opacity: 0.9;
+    }
+
+    .vhead {
+        position: relative;
+    }
+
+    .netflix-video .content .izq .btn {
+        width: 110px !important;
+        white-space: nowrap;
+        font-size: 9px !important;
+        padding: 0 10px 0 0;
+        bottom: 30px;
+        right: 5px;
+        position: relative;
+        margin: 0 5px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+
+    .slider {
+        top: 280px;
+        margin-left: 5px;
+    }
+
+    .card {
+        width: 80px;
+    }
+
+    .card:hover {
+        display: none;
+
+    }
+
+    .margin-right {
+        margin-right: 15px;
+    }
+
+    .card-icon {
+        font-size: 10px !important;
+    }
+
+    .card-body {
+        top: 100px !important;
+    }
+
+    .netflix-text {
+        font-size: 10px;
+    }
+
+    .position-slider2 {
+        top: 10px !important;
+    }
+
+    .margin-title {
+        margin-top: 130px;
+    }
+
+    .margin-title2 {
+        margin-top: 18px;
+    }
+
+    .copy-right {
+        margin-left: 0 !important;
+    }
+
+    body:after {
+        top: 90%;
+        right: 0;
+        bottom: 0;
+        left: 45%;
+    }
+}
+
+
+/* MOVIL2 */
+/* @media screen and (min-width: 2400px) and (min-height: 1080px) {
+    .netflix-padding-left {
+        padding-left: 10px !important;
+    }
+
+    .netflix-padding-right {
+        padding-right: 10px !important;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+    }
+
+    i {
+        font-size: 25px;
+        padding: 3px !important;
+    }
+
+    .netflix-perfil {
+        margin-left: 20px;
+    }
+
+    .netflix-nav {
+        display: block !important;
+    }
+
+    
+    .netflix-video .content .izq {
+        margin-left: 40px;
+        margin-top: 90px;
+    }
+
+    .netflix-video .content .izq img {
+        width: 600px;
+        margin-top: 500px !important;
+    }
+
+    button {
+        font-size: 25px !important;
+        width: auto !important;
+        opacity: 0.9;
+    }
+
+    .vhead {
+        position: relative;
+    }
+
+    .netflix-video .content .izq .btn {
+        width: 110px !important;
+        white-space: nowrap;
+        font-size: 20px !important;
+        padding: 10px;
+        padding-right: 20px;
+        bottom: 30px;
+        right: 5px;
+        margin: 0 5px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+    
+    .slider {
+        top: 1135px;
+        margin-left: 5px;
+    }
+
+    .slider-box .slider section p {
+        font-size: 30px;
+    }
+
+    .slide2 .slide section p {
+        font-size: 30px;
+    }
+
+    .slide3 .slide section p {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 500px;
+    }
+
+    .card:hover {
+        display: none;
+
+    }
+
+    .margin-right {
+        margin-right: 15px;
+    }
+
+    .card-icon {
+        font-size: 10px !important;
+    }
+
+    .card-body {
+        top: 100px !important;
+    }
+
+    .netflix-text {
+        font-size: 10px;
+    }
+
+    .position-slider2 {
+        top: 10px !important;
+    }
+
+    .margin-title {
+        margin-top: 130px;
+    }
+
+    .margin-title2 {
+        margin-top: 18px;
+    }
+
+    .copy-right {
+        margin-left: 27px !important;
+    }
+
+} */
